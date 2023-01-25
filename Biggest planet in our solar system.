@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package linkedincourse;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author FABIO
+ */
+public class LinkedinCourse {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    String question = "What is the largest planet in our solar system?";
+    String choiceOne = "earth";
+    String choiceTwo = "jupiter";
+    String choiceThree = "saturn";
+    String correctAnswer = choiceTwo;
+    System.out.println(question);
+    System.out.println("Choose one of the following: " + choiceOne + ", " + choiceTwo + ", or " + choiceThree + ".");
+    Scanner scanner = new Scanner(System.in);
+    String input = scanner.next();
+    if(correctAnswer.equals(input.toLowerCase())){
+        System.out.println("Congrats! That's the correct answer.");
+    }else{
+        System.out.println("You're incorrect. The correct answer is " + correctAnswer + ".");
+    }
+}
+    
+}
